@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.one{
+    width: 40%;
+    padding-top: 9%;
+    padding-left: 6%;
+    font-size: 250%;
+    font-style: italic;
+
+}
+.two{
+    line-height: 4;
+    list-style-type: none;
+
+}
+/* color link */
+.origin{
+    text-decoration:none;
+    color: rgba(255, 255, 255, 0.371);
+}
+.setting{
+    text-decoration:none;
+    color: rgba(255, 255, 255, 0.371);
+}
+.information{
+    text-decoration:none;
+    color: rgba(255, 255, 255, 0.371);
+}
+/* colo backlight */
+.origin:hover{
+    color: white;
+}
+.setting:hover{
+    color: white;
+}
+.information:hover{
+    color: white;
+}
+/* work photo */
+.photo{
+    float: right;
+    padding-top: 7%;
+    padding-right: 10%;
+}
+/* background */
+.star{
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px white;
+   animation: start-scale infinite alternate;
+}
+
+@keyframes start-scale{
+    0% { transform: scale(1); opacity: 1; }
+    25% { ransform: scale(.9); opacity: .8; }
+    50% { transform: scale(1); opacity: .9;}
+    75% { transform: scale(.2); opacity: .2;}
+    100% { transform: scale(.9); opacity: .9;}
+}

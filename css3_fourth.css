@@ -1,0 +1,21 @@
+/* работа с тестом перемещение*/
+.text{
+    display: flex;
+    justify-content: center; /* делаем текст по середине */
+    margin-top: 20%;
+}
+/* работа с самим тестом */
+.title{
+    text-decoration: none; /* убираем подчеркивание */
+    color: white;
+    font-family: monospace;
+    font-size: 30px; /* размер шрифта */
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* работа с панелью ввода теста */
+.passwd{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}

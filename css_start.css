@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+}
+
+.wrapper{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center; /* делаем текст по середине */
+    margin-top: 20%;
+}
+
+.tit{
+    text-decoration: none; /* убираем подчеркивание */
+    width: 14ch; /* колличество символов */
+    color: white;
+    font-family: monospace;
+    font-size: 40px; /* размер шрифта */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    animation: flashing-border 0.75s step-end 
+    infinite, printed-text 5s steps(28);
+    /* ease - плавное мигание
+     step-end - резкое мигание*/
+}
+
+/* анимация курсора */
+@keyframes flashing-border{
+    0%{
+        border-color: white;
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: white;
+    }
+}
+
+/* аимация ввода текста */
+@keyframes printed-text{
+    from{
+        width: 0%;
+    }
+}
